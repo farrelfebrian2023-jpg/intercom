@@ -59,6 +59,15 @@ class SampleContract extends Contract {
                 some_key : { type : "string", min : 1, max: 128 }
             }
         });
+        this.addSchema('sealAgentHandoff', {
+            value : {
+                $$strict : true,
+                $$type: "object",
+                op : { type : "string", min : 1, max: 128 },
+                status : { type : "string", min : 1, max: 128 },
+                note : { type : "string", min : 1, max: 256 }
+            }
+        });
 
         // in preparation to add an external Feature (aka oracle), we add a loose schema to make sure
         // the Feature key is given properly. it's not required, but showcases that even these can be
@@ -72,6 +81,7 @@ class SampleContract extends Contract {
         this.addFunction('readSnapshot');
         this.addFunction('readChatLast');
         this.addFunction('readTimer');
+        this.addFunction('inspectAgentHandoff');
         this.addSchema('readKey', {
             value : {
                 $$strict : true,
@@ -235,6 +245,22 @@ class SampleContract extends Contract {
         const currentTime = await this.get('currentTime');
         console.log('currentTime:', currentTime);
     }
+
+    async sealAgentHandoff(){
+        const cloned = this.protocol.safeClone(this.value);
+        this.assert(cloned !== null);
+        cloned['timestamp'] = await this.get('currentTime');
+        cloned['updated_by'] = this.address;
+        await this.put('agent_handoff/intercom_core/latest', cloned);
+        await this.put('agent_handoff/intercom_core/by/'+this.address, cloned);
+        console.log('agent_handoff updated:', cloned);
+    }
+
+    async inspectAgentHandoff(){
+        const latest = await this.get('agent_handoff/intercom_core/latest');
+        console.log('agent_handoff latest:', latest);
+    }
 }
 
 export default SampleContract;
+

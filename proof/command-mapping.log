@@ -1,0 +1,10 @@
+inspect_agent_handoff_intercom_core => { type: 'inspectAgentHandoff', value: null }
+seal_agent_handoff_intercom_core => {
+  type: 'sealAgentHandoff',
+  value: {
+    op: 'seal_agent_handoff_intercom_core',
+    status: 'MVP ready',
+    note: 'competition-proof'
+  }
+}
+

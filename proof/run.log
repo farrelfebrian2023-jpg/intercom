@@ -1,0 +1,188 @@
+ 
+[sidechannel] welcome required for non-entry channels; entry "0000intercom" is open and does not require owner/welcome.
+Key pair exported to stores/proof-admin-msb/db/keypair.json
+Key pair exported to stores\proof-admin\db\keypair.json
+=============== STARTING MSB ===============
+State initialization...
+Network initialization...
+
+#####################################################################################
+# MSB Address:    trac1txk7t5muvka3duhfu62t6vhg9cw76e0q6scuug22gvq6gtr8wy5s7jvnfj  #
+# MSB Writer:     9d2135c7ea250b51f47f7cc1d75699b730421f72d17fd8a1d6ad297f3baece4f #
+#####################################################################################
+Channel: 0000trac0network0msb0mainnet0000
+isIndexer: false
+isWriter: false
+MSB Unsigned Length: 0
+MSB Signed Length: 0
+Balance: 0
+=============== STARTING PEER ===============
+
+######################################################################################
+# Peer Address:     bfb4130ce647b5953d3d126d7aa34109c2fc31df520b142bcaea65ce89473fa0 #
+# Peer Writer:      d254b8dc81c19959f9513b62c16d5c636e48cd7b63fb4aaa099baf0e9508a8b5 #
+######################################################################################
+
+isIndexer: true
+isWriter: true
+
+
+====================INTERCOM ====================
+MSB network bootstrap: acbc3a4344d3a804101d40e53db1dda82b767646425af73599d4cd6577d69685
+MSB channel: 0000trac0network0msb0mainnet0000
+MSB store: stores\proof-admin-msb
+Peer store: stores\proof-admin
+Peer DHT bootstrap nodes: 127.0.0.1:49737
+Peer subnet bootstrap: d254b8dc81c19959f9513b62c16d5c636e48cd7b63fb4aaa099baf0e9508a8b5
+Peer subnet channel: proof-intercom-status
+Peer pubkey (hex): bfb4130ce647b5953d3d126d7aa34109c2fc31df520b142bcaea65ce89473fa0
+Peer trac address (bech32m): trac1h76pxr8xg76e20fazfkh4g6pp8p0cvwl2g93g272afjuaz2887sqlx0xs0
+Peer writer key (hex): d254b8dc81c19959f9513b62c16d5c636e48cd7b63fb4aaa099baf0e9508a8b5
+Sidechannel entry: 0000intercom
+Sidechannel extras: proof-room
+================================================================
+
+Sidechannel: ready
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923655535,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923678469,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] d6f3f29a327360dcf29af0e0f311df40f8e0e3196d14b1060ec95d71c87d4bcd: {
+  type: 'agent.announce',
+  name: 'Operator (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923681433,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923681534,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923716533,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923738469,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] d6f3f29a327360dcf29af0e0f311df40f8e0e3196d14b1060ec95d71c87d4bcd: {
+  type: 'agent.announce',
+  name: 'Operator (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923741435,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923776533,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923792540,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923798469,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] d6f3f29a327360dcf29af0e0f311df40f8e0e3196d14b1060ec95d71c87d4bcd: {
+  type: 'agent.announce',
+  name: 'Operator (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923801434,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923836534,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}
+[sidechannel:0000intercom] 2e81df46d71bd9c92f2e8a4734425965e3391a5add832202297d6afe86382803: {
+  type: 'agent.announce',
+  name: 'Tracy Tester (operator)',
+  peer: 'unknown',
+  address: null,
+  capabilities: [ 'operator', 'chat', 'monitoring' ],
+  note: 'Claw2Claw Control Centre',
+  ts: 1771923852537,
+  version: '1.0.0',
+  protocol: 'intercom-p2p-v1'
+}

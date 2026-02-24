@@ -169,6 +169,10 @@ class SampleProtocol extends Protocol{
             obj.type = 'readTimer';
             obj.value = null;
             return obj;
+        } else if (command === 'inspect_agent_handoff_intercom_core') {
+            obj.type = 'inspectAgentHandoff';
+            obj.value = null;
+            return obj;
         } else {
             /*
             now we assume our protocol allows to submit a json string with information
@@ -186,6 +190,10 @@ class SampleProtocol extends Protocol{
                 obj.type = 'submitSomething';
                 obj.value = json;
                 return obj;
+            } else if (json.op !== undefined && json.op === 'seal_agent_handoff_intercom_core') {
+                obj.type = 'sealAgentHandoff';
+                obj.value = json;
+                return obj;
             } else if (json.op !== undefined && json.op === 'read_key') {
                 obj.type = 'readKey';
                 obj.value = json;
@@ -196,6 +204,10 @@ class SampleProtocol extends Protocol{
                 return obj;
             } else if (json.op !== undefined && json.op === 'read_timer') {
                 obj.type = 'readTimer';
+                obj.value = null;
+                return obj;
+            } else if (json.op !== undefined && json.op === 'inspect_agent_handoff_intercom_core') {
+                obj.type = 'inspectAgentHandoff';
                 obj.value = null;
                 return obj;
             }
@@ -218,6 +230,8 @@ class SampleProtocol extends Protocol{
         console.log('- /msb | prints MSB txv + lengths (local MSB node view).');
         console.log('- /tx --command "read_chat_last" | prints last chat message captured by contract.');
         console.log('- /tx --command "read_timer" | prints current timer feature value.');
+        console.log('- /tx --command \'{"op":"seal_agent_handoff_intercom_core","status":"MVP ready","note":"first demo"}\' | writes latest agent handoff status.');
+        console.log('- /tx --command "inspect_agent_handoff_intercom_core" | reads latest agent handoff status.');
         console.log('- /sc_join --channel "<name>" | join an ephemeral sidechannel (no autobase).');
         console.log('- /sc_open --channel "<name>" [--via "<channel>"] [--invite <json|b64|@file>] [--welcome <json|b64|@file>] | request others to open a sidechannel.');
         console.log('- /sc_send --channel "<name>" --message "<text>" [--invite <json|b64|@file>] | send message over sidechannel.');
@@ -597,3 +611,4 @@ class SampleProtocol extends Protocol{
 }
 
 export default SampleProtocol;
+

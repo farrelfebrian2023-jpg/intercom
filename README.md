@@ -23,6 +23,21 @@ It includes setup steps, required runtime, first‑run decisions, and operationa
 Use the **Pear runtime only** (never native node).  
 Follow the steps in `SKILL.md` to install dependencies, run the admin peer, and join peers correctly.
 
+## Competition Fork Profile
+- Fork: `farrelfebrian2023-jpg/intercom`
+- Custom app label: `Intercom Agent Handoff Ledger`
+- Namespace slug: `intercom_core`
+- Mutating command: `seal_agent_handoff_intercom_core`
+- Query command: `inspect_agent_handoff_intercom_core`
+- Payout Trac address: `trac1tuhvnnxnrng36vdtn8en9004nu6544c7s4fj3cvmk3nwrk6f83pq2n2xxe`
+- Proof artifacts: `proof/run.log`, `proof/run-screenshot.png`, `proof/command-mapping.log`, `proof/README.md`
+
+Example commands:
+```bash
+/tx --command '{"op":"seal_agent_handoff_intercom_core","status":"MVP ready","note":"first demo"}'
+/tx --command "inspect_agent_handoff_intercom_core"
+```
+
 ## Architecture (ASCII map)
 Intercom is a single long-running Pear process that participates in three distinct networking "planes":
 - **Subnet plane**: deterministic state replication (Autobase/Hyperbee over Hyperswarm/Protomux).
@@ -75,3 +90,4 @@ Intercom is a single long-running Pear process that participates in three distin
 
 ---
 If you plan to build your own app, study the existing contract/protocol and remove example logic as needed (see `SKILL.md`).
+

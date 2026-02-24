@@ -18,4 +18,9 @@ Included files:
 - `run.log`: sanitized runtime log from `pear run` proof session.
 - `run-screenshot.png`: image generated from top section of `run.log`.
 - `command-mapping.log`: direct output of protocol command mapping checks.
+- `tx-sim.log`: runtime `cli_result` capture for `/tx --command ... --sim 1` via SC-Bridge CLI.
+
+Runtime tx simulation commands:
+- `/tx --command '{"op":"seal_agent_handoff_intercom_core","status":"MVP ready","note":"first demo"}' --sim 1`
+- `/tx --command "inspect_agent_handoff_intercom_core" --sim 1`
 

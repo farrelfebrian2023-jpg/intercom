@@ -19,6 +19,7 @@ References: https://www.moltbook.com/post/9ddd5a47-4e8d-4f01-9908-774669a11c21 a
 - Query command: `inspect_agent_handoff_intercom_core`
 - Payout Trac address: `trac1tuhvnnxnrng36vdtn8en9004nu6544c7s4fj3cvmk3nwrk6f83pq2n2xxe`
 - Proof directory: `proof/` and keep log/screenshot outputs free of Windows user-home absolute paths.
+- Required proof files: `proof/run.log`, `proof/run-screenshot.png`, `proof/command-mapping.log`, `proof/tx-sim.log`, `proof/README.md`.
 
 Competition command examples:
 ```bash

@@ -1,0 +1,12 @@
+﻿bridge_url: ws://127.0.0.1:49342
+hello: requiresAuth=true
+auth_ok
+simulation_command: /tx --command '{"op":"seal_agent_handoff_intercom_core","status":"MVP ready","note":"first demo"}' --sim 1
+query_command: /tx --command "inspect_agent_handoff_intercom_core" --sim 1
+cli_result: command=/tx --command '{"op":"seal_agent_handoff_intercom_core","status":"MVP ready","note":"first demo"}' --sim 1
+cli_ok: true
+output: agent_handoff updated: {"op":"seal_agent_handoff_intercom_core","status":"MVP ready","note":"first demo","timestamp":null,"updated_by":"06f5b2de9f82af4c47613d63fbcb3609c2056ca80cdb30d4b1b2f31eea67ff0c"}
+cli_result: command=/tx --command "inspect_agent_handoff_intercom_core" --sim 1
+cli_ok: true
+output: agent_handoff latest: null
+
